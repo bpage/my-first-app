@@ -85,6 +85,11 @@ def wheel_tracker():
     return send_file("wheel-tracker.html")
 
 
+@app.route("/wheel-strategy")
+def wheel_strategy():
+    return send_file("wheel-strategy.html")
+
+
 @app.route("/api/status")
 def status():
     alpaca_ok = False
